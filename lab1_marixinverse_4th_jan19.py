@@ -10,3 +10,6 @@ else:
 	i=np.linalg.inv(a)
 	print('Determinant of given matrix is ;')
 	print i
+p=np.linalg.pinv(a)
+print('Psuedo Inverse of given marix is ;')
+print p
