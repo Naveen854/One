@@ -1,4 +1,4 @@
-import cmath
+import cmath as cm
 import numpy as np
 import matplotlib.pyplot as plt
 def iexp(n):
@@ -10,6 +10,7 @@ def dft(x,n):
 		sum=0;
 		for m in range(a):
 			sum+=sum+x[m]*exp(-1*2*np.pi*i*m/float(N))
+	return sum
 def timeshift(l,xs):
 	n=len(xs)
 	m=l
@@ -23,7 +24,7 @@ def timeshift(l,xs):
 				
 	            
             
-            
+q=0;            
 x=input('Enter the First Sequence ;')
 N=input('Enter the order to fin N-point DFT')
 z=len(x)
