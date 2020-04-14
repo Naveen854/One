@@ -19,7 +19,7 @@ while i<len(text):
                 k=1
         result.append("".join(list_words))
     else:
-        result.append(text[i])
+        result.append(text[i]+(lenght - len(text[i])*" ")
     i+=1
 for line in result:
     print(line)
